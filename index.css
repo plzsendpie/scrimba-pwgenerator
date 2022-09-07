@@ -2,6 +2,7 @@ body {
     background: #1C1C1C;
     margin-top: 60px;
     color: #D5D4D8;
+    font-family: 'Inter';
 }
 
 h1{
@@ -37,7 +38,6 @@ p#tagline {
 }
 
 .generator--btn {
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
