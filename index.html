@@ -1,0 +1,30 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <h1><span id="white--title">Generate a </span><br><span id="green--title">random password</span></h1>
+            <p id="tagline">Never use an insecure password again.</p>
+            <div id="pw--toggles">
+                <div class="slidecontainer">
+                <input type="range" min="15" max="30" value="15" class="slider" id="myRange">
+                <p id="pw--length--display">Length: <span id="pw--length"></span></p>
+                <input type="checkbox" id="numbers--check" checked=true><label class="toggle--label" for="numbers--check">Include Numbers</label><br>
+                <input type="checkbox" id="symbols--check" checked=true><label class="toggle--label" for="symbols--check">Include Symbols</label>
+                </div>
+            </div>
+            <button class="generator--btn" onclick="generatePasswords()">Generate Passwords</button>
+            <hr>
+            <div id = "result--section">
+                <input type="text" class="pw--boxes" id="pw--one" onclick="copyPwToClipboard(this)">
+                <input type="text" class="pw--boxes" id="pw--two" onclick="copyPwToClipboard(this)">
+            </div>
+        </div>
+        <div id="snackbar">Password copied!</div>
+        <script src="index.js"></script>
+    </body>
+</html>
